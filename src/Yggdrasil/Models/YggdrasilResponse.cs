@@ -1,4 +1,4 @@
-﻿namespace Yggdrasil.Models
+﻿namespace Yggdrasil.NET.Models
 {
     public class YggdrasilResponse<T>
     {

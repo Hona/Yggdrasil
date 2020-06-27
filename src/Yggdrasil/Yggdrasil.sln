@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30128.74
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Yggdrasil", "Yggdrasil.csproj", "{44B389B7-2A9D-4788-83FB-427E67171540}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Yggdrasil.NET", "Yggdrasil.NET.csproj", "{44B389B7-2A9D-4788-83FB-427E67171540}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

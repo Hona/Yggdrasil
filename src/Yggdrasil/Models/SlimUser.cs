@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using Newtonsoft.Json;
 
-namespace Yggdrasil.Models
+namespace Yggdrasil.NET.Models
 {
     public class SlimUser
     {

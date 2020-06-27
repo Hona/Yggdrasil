@@ -1,4 +1,4 @@
-﻿namespace Yggdrasil.Models
+﻿namespace Yggdrasil.NET.Models
 {
     /// TODO: `Signout` response + `invalidate` response
     public enum StandardResponse

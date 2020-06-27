@@ -1,6 +1,6 @@
 ﻿using Newtonsoft.Json;
 
-namespace Yggdrasil.Models
+namespace Yggdrasil.NET.Models
 {
     public class Agent
     {
