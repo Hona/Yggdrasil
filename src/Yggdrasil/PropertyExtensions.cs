@@ -1,6 +1,6 @@
-﻿using Yggdrasil.NET.Models;
+﻿using Yggdrasil.Models;
 
-namespace Yggdrasil.NET
+namespace Yggdrasil
 {
     public static class PropertyExtensions
     {

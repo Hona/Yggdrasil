@@ -1,7 +1,7 @@
 ﻿using System;
 using Newtonsoft.Json;
 
-namespace Yggdrasil.NET.Models
+namespace Yggdrasil.Models
 {
     public class Profile : SlimProfile
     {

@@ -3,11 +3,11 @@ using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
-using Yggdrasil.NET.Models;
+using Yggdrasil.Models;
 
-namespace Yggdrasil.NET
+namespace Yggdrasil
 {
-    public class Yggdrasil
+    public class YggdrasilService
     {
         private readonly HttpClient _httpClient = new HttpClient
         {

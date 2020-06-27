@@ -1,6 +1,6 @@
 ﻿using System.Runtime.Serialization;
 
-namespace Yggdrasil.NET.Models
+namespace Yggdrasil.Models
 {
     public enum ErrorType
     {
