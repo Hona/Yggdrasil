@@ -34,6 +34,8 @@ namespace Yggdrasil
                 else if (typeof(T).IsEnum)
                     // Sets the enum responses to 1 (success/valid), can't do this cleanly since T may also be a class
                     output.Response = (T) Enum.Parse(typeof(T), "1");
+                else
+                    output.Response = JsonConvert.DeserializeObject<T>((string)stringValue);
             }
             else
             {
