@@ -9,14 +9,22 @@
     <Company>Minecraft .NET Core</Company>
     <Description>Async wrapper to the Mojang Authentication system</Description>
     <PackageId>Yggdrasil.NET</PackageId>
-    <PackageLicenseExpression>GNU General Public License v3.0</PackageLicenseExpression>
+    <PackageLicenseExpression></PackageLicenseExpression>
     <PackageProjectUrl>https://github.com/Minecraft-NET-Core/Yggdrasil</PackageProjectUrl>
     <RepositoryUrl>https://github.com/Minecraft-NET-Core/Yggdrasil</RepositoryUrl>
     <PackageTags>Minecraft</PackageTags>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\..\LICENSE">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
   </ItemGroup>
 
 </Project>
