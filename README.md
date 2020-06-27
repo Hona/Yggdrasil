@@ -1,6 +1,7 @@
 # Yggdrasil
-C# async wrapper of Yggrasil - the Mojang authentication system.
+![Nuget](https://img.shields.io/nuget/v/Yggdrasil.NET)
 
+C# async wrapper of Yggrasil - the Mojang authentication system.
 ## Example
 ```cs
 var yggdrasil = new YggdrasilService();
