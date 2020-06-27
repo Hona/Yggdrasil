@@ -2,6 +2,17 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <Version>0.1.0</Version>
+    <Authors>Luke Parker</Authors>
+    <Company>Minecraft .NET Core</Company>
+    <Description>Async wrapper to the Mojang Authentication system</Description>
+    <PackageId>Yggdrasil.NET</PackageId>
+    <PackageLicenseExpression>GNU General Public License v3.0</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/Minecraft-NET-Core/Yggdrasil</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/Minecraft-NET-Core/Yggdrasil</RepositoryUrl>
+    <PackageTags>Minecraft</PackageTags>
   </PropertyGroup>
 
   <ItemGroup>
