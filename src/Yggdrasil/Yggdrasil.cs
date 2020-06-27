@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Net.Http;
+using System.Net.Http.Headers;
+using System.Text;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
 using Yggdrasil.Models;
@@ -13,15 +15,10 @@ namespace Yggdrasil
             BaseAddress = new Uri("https://authserver.mojang.com")
         };
 
-        public Yggdrasil()
-        {
-            _httpClient.DefaultRequestHeaders.Add("Content-Type", "application/json");
-        }
-
         private async Task<YggdrasilResponse<T>> PostAsync<T, T2>(string endpoint, T2 payload)
         {
             var response =
-                await _httpClient.PostAsync(endpoint, new StringContent(JsonConvert.SerializeObject(payload)));
+                await _httpClient.PostAsync(endpoint, new StringContent(JsonConvert.SerializeObject(payload), Encoding.UTF8, "application/json"));
             object stringValue = await response.Content.ReadAsStringAsync();
 
             var output = new YggdrasilResponse<T>();
