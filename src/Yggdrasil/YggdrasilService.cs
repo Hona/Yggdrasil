@@ -14,13 +14,13 @@ namespace Yggdrasil
             BaseAddress = new Uri("https://authserver.mojang.com")
         };
 
-        private async Task<YggdrasilResponse<T>> PostAsync<T, T2>(string endpoint, T2 payload)
+        private async Task<YggdrasilResponse<TResponse>> PostAsync<TResponse, TPayload>(string endpoint, TPayload payload)
         {
             var response =
                 await _httpClient.PostAsync(endpoint, new StringContent(JsonConvert.SerializeObject(payload), Encoding.UTF8, "application/json"));
             object stringValue = await response.Content.ReadAsStringAsync();
 
-            var output = new YggdrasilResponse<T>();
+            var output = new YggdrasilResponse<TResponse>();
             if (response.IsSuccessStatusCode)
             {
                 output.ErrorResponse = null;
@@ -28,13 +28,13 @@ namespace Yggdrasil
 
                 // Deserializes and sets the response object
                 // If T is a string, don't deserialize
-                if (typeof(T) == typeof(string))
-                    output.Response = (T) stringValue;
-                else if (typeof(T).IsEnum)
+                if (typeof(TResponse) == typeof(string))
+                    output.Response = (TResponse) stringValue;
+                else if (typeof(TResponse).IsEnum)
                     // Sets the enum responses to 1 (success/valid), can't do this cleanly since T may also be a class
-                    output.Response = (T) Enum.Parse(typeof(T), "1");
+                    output.Response = (TResponse) Enum.Parse(typeof(TResponse), "1");
                 else
-                    output.Response = JsonConvert.DeserializeObject<T>((string)stringValue);
+                    output.Response = JsonConvert.DeserializeObject<TResponse>((string)stringValue);
             }
             else
             {
