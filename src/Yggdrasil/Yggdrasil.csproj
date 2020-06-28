@@ -4,7 +4,7 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
-    <Version>0.2.2</Version>
+    <Version>0.2.3</Version>
     <Authors>Luke Parker</Authors>
     <Company>Minecraft .NET Core</Company>
     <Description>Async wrapper to the Mojang Authentication system</Description>
@@ -14,7 +14,7 @@
     <RepositoryUrl>https://github.com/Minecraft-NET-Core/Yggdrasil</RepositoryUrl>
     <PackageTags>Minecraft</PackageTags>
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
-    <PackageReleaseNotes>Adjusted namespace and service name</PackageReleaseNotes>
+    <PackageReleaseNotes>Fix TokensPayload json serialization</PackageReleaseNotes>
   </PropertyGroup>
 
   <ItemGroup>
