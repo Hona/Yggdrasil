@@ -1,5 +1,5 @@
 # Yggdrasil
-![Nuget](https://img.shields.io/nuget/v/Yggdrasil.NET)
+[![Nuget](https://img.shields.io/nuget/v/Yggdrasil.NET)](https://www.nuget.org/packages/Yggdrasil.NET)
 
 C# async wrapper of Yggrasil - the Mojang authentication system.
 ## Usage
